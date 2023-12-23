@@ -188,7 +188,9 @@ header {
 
 #slider {
    
-
+    .carousel-inner{
+        height: 700px;
+    }
     .slide-image {
         position: relative;
        
@@ -198,31 +200,39 @@ header {
         }
         .text {
             position: absolute;
-            top: 50px;
-            left: 110px;
+            top: 200px;
+            left: 200px;
             width: 50%;
-            font-family: Karla400;
+           
 
             h6 {
-
-                font-size: 13px;
-                font-weight: 800;
+                color: white;
+                font-size: 16px;
+                font-family: Karla400;
+                text-transform: uppercase;
             }
 
             h1 {
                 margin-bottom: 20px;
-                font-size: 50px;
+                font-size: 64px;
+                font-family: Montaga400;
+                color: white;
             }
 
             p {
-                font-size: 16px;
-                color: #a2a2a2;
-                margin-bottom: 30px;
+                font-size: 18px;
+                font-family: Karla400;
+                color: white;
+                margin-bottom: 60px;
             }
 
             a {
-
-                color: black;
+                padding: 15px 30px;
+                background-color: #ddf3b6;
+                color:rgb(16, 43, 38) ;
+                font-size: 16px;
+                font-family: Karla400;
+                font-weight: bold;
 
             }
         }
