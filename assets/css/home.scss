@@ -48,6 +48,33 @@
 
     }
 
+
+#slider{
+    .text{
+        top:70px!important;
+        left:70px!important;
+        width: 100%!important;
+        h6{
+            font-size: 14px!important;
+        }
+        h1{
+            font-size: 36px!important;
+            margin-bottom: 10px!important;
+        }
+        p{
+            font-size: 14px!important;
+            margin-bottom: 20px!important;
+        }
+
+        a {
+            padding: 10px 15px!important;
+            font-size: 12px!important;
+        }
+    }
+}
+
+
+
     footer{
         .footer-right{
             .text{
@@ -57,7 +84,49 @@
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {}
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+
+
+    #slider{
+        .carousel-inner{
+            height: 400px!important;
+        }
+        .text{
+            top:110px!important;
+            left:110px!important;
+            width: 100%!important;
+            h6{
+                font-size: 16px!important;
+            }
+            h1{
+                font-size: 46px!important;
+                margin-bottom: 10px!important;
+            }
+            p{
+                font-size: 14px!important;
+                margin-bottom: 30px!important;
+            }
+    
+            a {
+                padding: 12px 20px!important;
+                font-size: 14px!important;
+            }
+        }
+    }
+
+
+    #beauty-store{
+    .content-bottom{
+        .right{
+            .text{
+                margin-left: 6rem!important;
+            }
+        }
+       
+    }
+}
+}
 
 @media all and (min-width: 992px) and (max-width: 1200px) {}
 
@@ -239,6 +308,112 @@ header {
     }
 
 }
+
+
+
+#beauty-store{
+    padding: 2rem 0;
+    .content-top{
+        text-align: center;
+        .img{
+            width: 100%;
+            img{
+                width: 6%;
+            }
+        }
+        .text{
+            h5{
+                font-family: Karla400;
+                font-size: 14px;
+                color: #5d5d5d99;
+                letter-spacing: 2px;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+            p{
+                font-family: Montaga400;
+                font-size: 36px;  
+               width: 50%;
+               margin: auto;
+               padding-bottom: 20px;
+            }
+            a{
+                font-family: Karla500;
+                font-size: 15px;
+                color: black;
+                border-style: solid;
+                border-width:0 0 1px 0;
+                border-bottom-color: black;
+                padding: 3px;
+                transition: all .3s;
+                &:hover{
+                    color:#ff6f2e;
+                    border-bottom-color:#ff6f2e;
+                }
+                
+            }
+           
+           
+        }
+    }
+
+    .content-bottom{
+        margin-top: 5rem;
+        .img{
+            width: 100%;
+            .img-left{
+                width: 90%;
+                margin-left: 4rem;
+            }
+            .img-right{
+                width: 70%;
+            }
+           
+        }
+        .right{
+           text-align: center;
+           margin-top: 5rem;
+           .text{
+            margin: 50px 0 0 76px;
+            text-align: start;
+            h5{
+                font-family: Karla400;
+                font-size: 14px;
+                color: #5d5d5d99;
+                letter-spacing: 2px;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+            h4{
+                font-family: Montaga400;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: Karla400;
+                font-size: 16px; 
+                margin-bottom: 60px;
+            }
+            a{
+                font-family: Karla400;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: #102b26;
+                color:#ddf3b6;
+                padding:15px 30px;
+                transition: all .5s;
+                &:hover{
+                    background-color: #ff6f2e;
+                    color:white;
+                }
+            }
+           }
+        }
+    }
+   
+}
+
+
 
 
 
