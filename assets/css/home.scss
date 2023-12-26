@@ -27,11 +27,19 @@
             }
 
 
-            .icon{
+            .icon {
                 margin-top: -40px;
                 flex: auto;
             }
 
+
+        }
+
+        .sidebar {
+            width: 40% !important;
+        }
+        .search-sidebar {
+            width: 40% !important;
         }
 
         nav {
@@ -39,6 +47,12 @@
         }
 
         .icons {
+            .search-icon {
+                img {
+                    margin-bottom: 6px;
+                }
+
+            }
 
             .user-icon,
             .wishlist,
@@ -48,7 +62,7 @@
         }
 
         .hamburger-icon {
-            display: flexbox !important;
+            display: inline;
         }
 
     }
@@ -160,18 +174,30 @@
             }
 
 
-            .icon{
+            .icon {
                 margin-top: -40px;
                 flex: auto;
             }
 
         }
 
+        .sidebar {
+            width: 30% !important;
+        }
+        .search-sidebar {
+            width: 30% !important;
+        }
         nav {
             display: none;
         }
 
         .icons {
+            .search-icon {
+                img {
+                    margin-bottom: 7px;
+                }
+
+            }
 
             .user-icon,
             .wishlist,
@@ -181,7 +207,7 @@
         }
 
         .hamburger-icon {
-            display: flexbox !important;
+            display: inline;
         }
 
     }
@@ -260,25 +286,24 @@
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
 
-    header{
-        .icons{
-            .hamburger-icon{
-                display: none;
-            }
+    header {
+        .hamburger-icon {
+
+            display: none;
         }
-        nav{
+
+        nav {
             width: 100%;
         }
+       
     }
 }
 
-@media only screen and (min-width: 1200px){
-    header{
-        
-        .icons{
-            .hamburger-icon{
-                display: none;
-            }
+@media only screen and (min-width: 1200px) {
+    header {
+        .hamburger-icon {
+
+            display: none;
         }
     }
 }
@@ -290,6 +315,19 @@ a {
 }
 
 header {
+    .overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 4;
+    }
+
     .ticker {
         padding: 8px 0;
         background-color: rgb(16, 43, 38);
@@ -313,6 +351,122 @@ header {
                 width: 35%;
             }
         }
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: .5s;
+        background-color: White;
+        width: 22%;
+        height: 100vh;
+        padding: 15px 25px;
+        z-index: 10;
+
+        i {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.5s;
+            z-index: 30px;
+        }
+
+        a {
+            color: black;
+            display: block;
+            line-height: 15px;
+            text-align: center;
+
+            &:nth-of-type(6) {
+                color: #919090;
+            }
+        }
+
+        .close-icon {
+            display: flex;
+            justify-content: flex-end;
+            padding: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            color: #102b26;
+            background-color: #ddf3b6;
+        }
+
+        hr {
+            margin-left: 40px;
+
+        }
+
+    }
+
+    .move-sidebar {
+        transform: translate(336px, 0);
+    }
+
+    .search-sidebar {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 22%;
+        height: 100vh;
+        padding: 20px;
+        z-index: 5;
+        background-color: white;
+        transition: all .5s;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-family: Karla400;
+            font-size: 16px;
+            span{
+                color: #999;
+            }
+            a {
+                color: #212529;
+            }
+
+            i {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .input {
+            border-bottom: 2px solid #aeaeae;
+
+            input {
+                width: 100%;
+                border: none;
+                margin-top: 20px;
+                outline: none;
+                
+                &::placeholder {
+                    font-family: Karla400;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+
+            i {
+                margin-top: 15px;
+                margin-right: 10px;
+            }
+        }
+
+        p {
+            font-family: Regular400;
+            font-size: 14px;
+            opacity: .4;
+            margin-top: 20px;
+        }
+
+
     }
 
     nav {
@@ -854,8 +1008,8 @@ header {
         background-size: cover;
 
         .text {
-            
-            
+
+
             h1 {
                 color: white;
                 font-family: Montaga400;
@@ -863,24 +1017,28 @@ header {
                 text-align: center;
             }
         }
-        .input{
+
+        .input {
             margin: auto;
             width: 70%;
             border: 1px solid white;
             padding: 15px;
-            i{
+
+            i {
                 color: white;
                 font-size: 20px;
             }
-            input{
+
+            input {
                 background: transparent;
                 width: 80%;
                 margin: 0 15px;
                 color: white;
                 outline: none;
                 border: none;
-                &::placeholder{
-color: white;
+
+                &::placeholder {
+                    color: white;
                 }
             }
         }
@@ -888,11 +1046,12 @@ color: white;
     }
 }
 
-#brands{
+#brands {
     background-color: #f0efe6;
     padding: 4rem 0;
     margin-bottom: 4rem;
-    h1{
+
+    h1 {
         font-size: 14px;
         font-family: Karla400;
         text-transform: uppercase;
@@ -901,11 +1060,13 @@ color: white;
         text-align: center;
         margin-bottom: 50px;
     }
-    .img{
+
+    .img {
         width: 100%;
         text-align: center;
-        img{
-           
+
+        img {
+
             width: 60%;
         }
     }
