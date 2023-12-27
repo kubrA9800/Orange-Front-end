@@ -38,6 +38,7 @@
         .sidebar {
             width: 40% !important;
         }
+
         .search-sidebar {
             width: 40% !important;
         }
@@ -184,9 +185,11 @@
         .sidebar {
             width: 30% !important;
         }
+
         .search-sidebar {
             width: 30% !important;
         }
+
         nav {
             display: none;
         }
@@ -295,7 +298,7 @@
         nav {
             width: 100%;
         }
-       
+
     }
 }
 
@@ -315,6 +318,11 @@ a {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+
     .overlay {
         position: fixed;
         display: none;
@@ -424,9 +432,11 @@ header {
             margin-top: 20px;
             font-family: Karla400;
             font-size: 16px;
-            span{
+
+            span {
                 color: #999;
             }
+
             a {
                 color: #212529;
             }
@@ -445,7 +455,7 @@ header {
                 border: none;
                 margin-top: 20px;
                 outline: none;
-                
+
                 &::placeholder {
                     font-family: Karla400;
                     font-size: 20px;

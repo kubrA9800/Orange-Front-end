@@ -296,89 +296,88 @@ header .icons .basket .count {
   align-items: center;
 }
 
-#passionate .content .img {
+#contact-top .img {
   width: 100%;
 }
-#passionate .content .img img {
-  width: 100%;
-}
-#passionate .content .text p {
-  padding: 30px 0;
-  font-family: Karla500;
-  font-size: 24px;
-  text-align: center;
-  width: 60%;
-  margin: auto;
-}
-
-#values {
-  background-color: #FCF9F3;
-  padding: 4rem 0;
-}
-#values .content {
-  width: 60%;
-  margin: auto;
-}
-#values .content h1 {
-  font-family: Karla400;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #ff6f2e;
-  margin-bottom: 20px;
-}
-#values .content p {
-  font-family: Karla500;
-  font-size: 24px;
-}
-
-#leading {
-  padding: 4rem 0;
-}
-#leading h1 {
-  font-family: Karla500;
-  font-size: 36px;
-  width: 80%;
-}
-#leading h2 {
-  font-family: Karla500;
-  font-size: 64px;
-}
-#leading p {
-  font-family: Karla500;
-  font-size: 16px;
-  width: 80%;
-}
-#leading .img {
-  width: 100%;
-}
-#leading .img img {
+#contact-top .img img {
   width: 90%;
 }
-
-#improvements {
-  background-color: #FCF9F3;
-  padding: 4rem 0;
+#contact-top .text h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Karla400;
+  color: #999;
 }
-#improvements .img {
-  width: 100%;
-}
-#improvements .img img {
-  width: 80%;
-}
-#improvements .text {
-  width: 80%;
-}
-#improvements .text h1 {
+#contact-top .text h1 {
   font-size: 36px;
   font-family: Karla500;
 }
-#improvements .text p {
+#contact-top .text h6 {
   font-size: 16px;
   font-family: Karla400;
 }
-#improvements .text h5 {
-  font-size: 18px;
+
+#contact-form {
+  padding: 4rem 0;
+}
+#contact-form .content {
+  width: 40%;
+  margin: auto;
+}
+#contact-form .content h1 {
+  font-size: 36px;
+  font-family: Karla500;
+  text-align: center;
+}
+#contact-form .content h6 {
+  font-size: 14px;
   font-family: Karla400;
+  text-align: center;
+}
+#contact-form h4 {
+  font-family: Karla400;
+  font-size: 14px;
+}
+#contact-form .input {
+  margin-top: 20px;
+}
+#contact-form .inputs-top {
+  margin-top: 30px;
+}
+#contact-form .inputs {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  border-radius: 3px;
+}
+#contact-form .inputs:focus {
+  border: 1px solid #949393;
+}
+#contact-form textarea {
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  border-radius: 3px;
+}
+#contact-form textarea:focus {
+  border: 1px solid #949393;
+}
+#contact-form .button button {
+  font-family: Karla400;
+  font-size: 15px;
+  border: none;
+  background-color: black;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+  color: white;
+  margin: 20px 0;
+  padding: 10px;
+  transition: all 0.5s;
+}
+#contact-form .button button:hover {
+  background-color: #ff6f2e;
+  color: white;
 }
 
 footer {
@@ -489,4 +488,4 @@ footer .footer-all .footer-bottom .rights {
   text-align: center;
   margin: auto;
   color: #6a6c6d;
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=contact.css.map */

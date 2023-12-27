@@ -38,6 +38,7 @@
         .sidebar {
             width: 40% !important;
         }
+
         .search-sidebar {
             width: 40% !important;
         }
@@ -93,9 +94,11 @@
         .sidebar {
             width: 30% !important;
         }
+
         .search-sidebar {
             width: 30% !important;
         }
+
         nav {
             display: none;
         }
@@ -133,7 +136,7 @@
         nav {
             width: 100%;
         }
-       
+
     }
 }
 
@@ -153,6 +156,7 @@ a {
 }
 
 header {
+    
     position: sticky;
     top: 0;
     background-color: white;
@@ -184,7 +188,7 @@ header {
 
     .header-all {
         padding: 2rem 0;
-
+       
         .logo {
             width: 100%;
 
@@ -265,9 +269,11 @@ header {
             margin-top: 20px;
             font-family: Karla400;
             font-size: 16px;
-            span{
+
+            span {
                 color: #999;
             }
+
             a {
                 color: #212529;
             }
@@ -286,7 +292,7 @@ header {
                 border: none;
                 margin-top: 20px;
                 outline: none;
-                
+
                 &::placeholder {
                     font-family: Karla400;
                     font-size: 20px;
@@ -389,99 +395,107 @@ header {
     }
 
 }
-
-
-#passionate{
-    
-    .content{
-    
-        .img{
-            
-            width: 100%;
-            img{
-                width: 100%;
-            }
-        }
-        .text{
-            p{
-                padding: 30px 0;
-                font-family: Karla500;
-                font-size: 24px;
-                text-align: center;
-                width: 60%;
-                margin: auto;
-            }
-        }
-    }
-}
-#values{
-    background-color: #FCF9F3;
-    padding: 4rem 0;
-    .content{
-        width: 60%;
-        margin: auto;
-        h1{
-            font-family: Karla400;
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #ff6f2e;
-            margin-bottom: 20px;
-        }
-        p{
-            font-family: Karla500;
-            font-size: 24px;
-        }
-    }
-}
-#leading{
-    padding: 4rem 0;
-    h1{
-        font-family: Karla500;
-            font-size: 36px;
-          width: 80%;
-    }
-    h2{
-        font-family: Karla500;
-            font-size: 64px;
-    }
-    p{
-        font-family: Karla500;
-        font-size: 16px;
-        width: 80%;  
-    }
+#contact-top{
     .img{
         width: 100%;
         img{
             width: 90%;
         }
     }
-}
-
-#improvements{
-    background-color: #FCF9F3;
-    padding: 4rem 0;
-    .img{
-        width: 100%;
-        img{
-            width: 80%;
-           
-        }
-    }
     .text{
-        width: 80%;
+        h2{
+            text-transform: uppercase;
+            font-size: 16px;
+            font-family: Karla400;
+            color: #999;
+        }
         h1{
             font-size: 36px;
             font-family: Karla500;
         }
-        p{
+        h6{
             font-size: 16px;
-            font-family: Karla400; 
-        }
-        h5{
-            font-size: 18px;
             font-family: Karla400;
         }
     }
+}
+
+#contact-form {
+    padding: 4rem 0;
+    .content {
+        width: 40%;
+        margin: auto;
+        h1{
+            font-size: 36px;
+            font-family: Karla500;
+            text-align: center;
+        }
+        h6{
+            font-size: 14px;
+            font-family: Karla400;
+            text-align: center;
+        }
+    }
+
+    h4 {
+        font-family: Karla400;
+        font-size: 14px;
+
+    }
+
+    .input {
+        margin-top: 20px;
+    }
+
+    .inputs-top {
+
+        margin-top: 30px;
+
+
+    }
+
+    .inputs {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #DDDDDD;
+        outline: none;
+        border-radius: 3px;
+
+        &:focus {
+            border: 1px solid #949393;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        outline: none;
+        border-radius: 3px;
+
+        &:focus {
+            border: 1px solid #949393;
+        }
+    }
+
+    .button {
+        button {
+            font-family: Karla400;
+            font-size: 15px;
+            border: none;
+            background-color: black;
+            border: 1px solid #DDDDDD;
+            border-radius: 2px;
+            color: white;
+            margin: 20px 0;
+            padding: 10px;
+            transition: all .5s;
+            &:hover{
+                background-color: #ff6f2e;
+                color: white;
+            }
+        }
+    }
+
 }
 
 
