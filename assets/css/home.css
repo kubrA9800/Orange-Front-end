@@ -702,6 +702,9 @@ header .icons .basket .count {
 }
 #blogs .blog .img img {
   width: 95%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #blogs .blog .text {
   width: 95%;
