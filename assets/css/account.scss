@@ -156,7 +156,7 @@ a {
 }
 
 header {
-
+    z-index: 10;
     position: sticky;
     top: 0;
     background-color: white;
@@ -408,67 +408,76 @@ header {
         width: 50%;
         margin: auto;
 
-        .form-item{
-            position: relative;
-            border: 1px solid #e7e7e7;
-            .form-input{
-                width: 100%;
-                padding: 5px 15px;
-                outline: none;
-                border: none;
-            }
-
-            .form-label {
-                position: absolute;
-                pointer-events: none;
-                left: 15px;
-                right: 15px;
-                top: 0;
-                white-space: nowrap;
-                overflow: hidden;
-                line-height: 40px;
-                transition: .3s;
-              }
-              
-              .form-input:focus~.form-label,
-              .form-input:not(:focus):valid~.form-label {
-                top: -23px;
-                font-size: 13px;
-                background-color: white;
-                width: 40px;
-                padding: 0px 5px;
-              }
-              .form-input:focus .form-item{
-                border: 2px solid #102b26;
-              }
-        }
-
-        // .input {
+        // .form-item{
         //     position: relative;
         //     border: 1px solid #e7e7e7;
-           
-
-        //     span {
-        //         position: absolute;
-        //         top: 10px;
-        //         left: 10px;
-        //         font-family: Karla400;
-        //         font-size: 16px;
-        //         color: #6a6c6d;
-        //     }
-
-        //     input {
+        //     .form-input{
         //         width: 100%;
-        //         //border: none;
+        //         padding: 5px 15px;
         //         outline: none;
-        //         margin-left: 10px;
-
-        //         &:focus {
-        //             border: 4px solid #102b26;
-                    
-        //         }
+        //         border: none;
         //     }
+
+        //     .form-label {
+        //         position: absolute;
+        //         pointer-events: none;
+        //         left: 15px;
+        //         right: 15px;
+        //         top: 0;
+        //         white-space: nowrap;
+        //         overflow: hidden;
+        //         line-height: 40px;
+        //         transition: .3s;
+        //       }
+              
+        //       .form-input:focus~.form-label,
+        //       .form-input:not(:focus):valid~.form-label {
+        //         top: -23px;
+        //         font-size: 13px;
+        //         background-color: white;
+        //         width: 40px;
+        //         padding: 0px 5px;
+        //       }
+        //       .form-input:focus .form-item{
+        //         border: 2px solid #102b26;
+        //       }
         // }
+
+        .input {
+            position: relative;
+            border: 1px solid #e7e7e7;
+           padding: 10px;
+
+            span {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                font-family: Karla400;
+                font-size: 16px;
+                color: #6a6c6d;
+                background-color: white;
+                transition: all .5s;
+                padding: 4px;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                margin-left: 10px;
+                transition: all .6s;
+                
+               
+           
+               
+
+            }
+            &:focus-within {
+                border: 2px solid #102b26;
+                // Add additional styling for the .input when its child input is in focus
+            }
+           
+        }
     }
 }
 
