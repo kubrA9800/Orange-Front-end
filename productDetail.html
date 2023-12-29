@@ -15,8 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montaga&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/account.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/css/productDetail.css">
+    <title>Product Detail</title>
 </head>
 
 <body>
@@ -102,67 +104,56 @@
         </div>
     </header>
 
-    <section id="login-register">
-        <div data-id="1" class="login-form box">
-            <div class="container">
-                <div class="head">
-                    <h1>Login</h1>
-                    <p>Please enter your e-mail and password:</p>
-                </div>
-                <div class="form">
-                    <div class="input">
-                        <span >Email</span>
-                        <input type="text">
-                    </div>
-                    <div class="input">
-                        <span>Password</span>
-                        <input type="text">
-                    </div>
-                    <a href="">Forgot your password?</a>
-                    <button>Login</button>
-                </div>
-                <div class="link d-flex">
-                    <h5>New customer?</h5>
-                    <a data-id="2" href="#">Register</a>
-                </div>
-            </div>
-        </div>
-        <div data-id="2" class="register-form box d-none">
-            <div class="container">
-                <div class="head">
-                    <h1>Register</h1>
-                    <p>Please fill in the fields below</p>
-                </div>
-                <div class="form">
-                    <div class="input">
-                        <span class=>First Name</span>
-                        <input type="text">
-                    </div>
-                    <div class="input">
-                        <span class=>Last Name</span>
-                        <input type="text">
-                    </div>
-                    <div class="input">
-                        <span class=>Email</span>
-                        <input type="text">
-                    </div>
-                    <div class="input">
-                        <span class=>Password</span>
-                        <input type="text">
-                    </div>
-                    
-                    <button>Create</button>
-                </div>
-                <div class="link d-flex">
-                    <h5>Already a member?</h5>
-                    <a data-id="1" href="#">Login</a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
 
-   
+    <main>
+
+
+        <section id="product-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="wrapper">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="product__slider">
+                                        <div class="product__slider-main">
+                                            <div class="slide"><img src="./assets/img/product/product1-1.webp" alt=""
+                                                    class="img-responsive"></div>
+                                            <div class="slide"><img src="./assets/img/product/product1-2.webp" alt=""
+                                                    class="img-responsive"></div>
+                                            <div class="slide"><img src="./assets/img/product/product1-3.webp" alt=""
+                                                    class="img-responsive"></div>
+                                        </div>
+                                        <div style="margin-left:25px;" class="product__slider-thmb">
+                                            <div class="slide"><img src="./assets/img/product/product1-1.webp" alt=""
+                                                    class="img-responsive"></div>
+                                            <div class="slide"><img src="./assets/img/product/product1-2.webp" alt=""
+                                                    class="img-responsive"></div>
+                                            <div class="slide"><img src="./assets/img/product/product1-3.webp" alt=""
+                                                    class="img-responsive"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="text">
+                            <h1>Super Pure</h1>
+                            <span>$29.00</span>
+                            <hr>
+                            <a href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+    </main>
 
 
     <footer>
@@ -251,7 +242,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
         integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -259,8 +250,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
         integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="./assets/js/swinger.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.js"></script>
     <script src="./assets/js/home.js"></script>
-    <script src="./assets/js/account.js"></script>
+    <script src="./assets/js/productDetail.js"></script>
 
 </body>
 
