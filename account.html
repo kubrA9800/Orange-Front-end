@@ -102,21 +102,67 @@
         </div>
     </header>
 
-    <section id="login">
-        <div class="container">
-            <div class="head">
-                <h1>Login</h1>
-                <p>Please enter your e-mail and password:</p>
-            </div>
-            <div class="form">
-                <div class="input">
-                    <span class=>Email</span>
-                    <input type="text">
-                  </div>
-                
+    <section id="login-register">
+        <div data-id="1" class="login-form box">
+            <div class="container">
+                <div class="head">
+                    <h1>Login</h1>
+                    <p>Please enter your e-mail and password:</p>
+                </div>
+                <div class="form">
+                    <div class="input">
+                        <span class=>Email</span>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <span class=>Password</span>
+                        <input type="text">
+                    </div>
+                    <a href="">Forgot your password?</a>
+                    <button>Login</button>
+                </div>
+                <div class="link d-flex">
+                    <h5>New customer?</h5>
+                    <a data-id="2" href="#">Register</a>
+                </div>
             </div>
         </div>
+        <div data-id="2" class="register-form box d-none">
+            <div class="container">
+                <div class="head">
+                    <h1>Register</h1>
+                    <p>Please fill in the fields below</p>
+                </div>
+                <div class="form">
+                    <div class="input">
+                        <span class=>First Name</span>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <span class=>Last Name</span>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <span class=>Email</span>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <span class=>Password</span>
+                        <input type="text">
+                    </div>
+                    
+                    <button>Create</button>
+                </div>
+                <div class="link d-flex">
+                    <h5>Already a member?</h5>
+                    <a data-id="1" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+        
     </section>
+
+   
 
 
     <footer>

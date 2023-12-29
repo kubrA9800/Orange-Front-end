@@ -297,25 +297,36 @@ header .icons .basket .count {
   align-items: center;
 }
 
-#login {
+#login-register {
   padding: 4rem 0;
 }
-#login .head {
+#login-register .login-form .head,
+#login-register .register-form .head {
   text-align: center;
+  margin-bottom: 50px;
 }
-#login .form {
-  width: 50%;
+#login-register .login-form .head h1,
+#login-register .register-form .head h1 {
+  font-family: Montaga400;
+  font-size: 40px;
+}
+#login-register .login-form .form,
+#login-register .register-form .form {
+  width: 40%;
   margin: auto;
 }
-#login .form .input {
+#login-register .login-form .form .input,
+#login-register .register-form .form .input {
   position: relative;
   border: 1px solid #e7e7e7;
   padding: 10px;
+  margin-bottom: 20px;
 }
-#login .form .input span {
+#login-register .login-form .form .input span,
+#login-register .register-form .form .input span {
   position: absolute;
   top: 5px;
-  left: 10px;
+  left: 25px;
   font-family: Karla400;
   font-size: 16px;
   color: #6a6c6d;
@@ -323,15 +334,59 @@ header .icons .basket .count {
   transition: all 0.5s;
   padding: 4px;
 }
-#login .form .input input {
+#login-register .login-form .form .input input,
+#login-register .register-form .form .input input {
   width: 100%;
   border: none;
   outline: none;
-  margin-left: 10px;
+  margin-left: 5px;
   transition: all 0.6s;
 }
-#login .form .input:focus-within {
+#login-register .login-form .form .input:focus-within,
+#login-register .register-form .form .input:focus-within {
   border: 2px solid #102b26;
+}
+#login-register .login-form .form a,
+#login-register .register-form .form a {
+  display: block;
+  text-align: end;
+  color: #6a6c6d;
+  font-size: 14px;
+  font-family: Karla400;
+}
+#login-register .login-form .form button,
+#login-register .register-form .form button {
+  width: 100%;
+  background-color: #102b26;
+  color: #ddf3b6;
+  border: none;
+  padding: 12px 0;
+  font-family: Karla500;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+#login-register .login-form .form button:hover,
+#login-register .register-form .form button:hover {
+  background-color: #ff6f2e;
+  color: #e7e7e7;
+}
+#login-register .login-form .link,
+#login-register .register-form .link {
+  margin-top: 20px;
+  justify-content: center;
+}
+#login-register .login-form .link h5,
+#login-register .login-form .link a,
+#login-register .register-form .link h5,
+#login-register .register-form .link a {
+  font-family: karla400;
+  font-size: 16px;
+}
+#login-register .login-form .link a,
+#login-register .register-form .link a {
+  color: #6a6c6d;
+  margin-left: 5px;
 }
 
 footer {
