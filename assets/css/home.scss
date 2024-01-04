@@ -830,9 +830,12 @@ header {
         .product {
             padding: 0 15px 40px 15px;
             position: relative;
+            overflow: hidden;
 
             img {
                 width: 96%;
+          
+
             }
 
             .hover-img {
@@ -841,7 +844,7 @@ header {
                 left: 15px;
                 width: 86%;
                 transition: all .7s;
-                overflow: hidden;
+                
 
                 &:hover {
                     transform: scale(1.1);
@@ -892,6 +895,11 @@ header {
         h4 {
             font-size: 20px;
             font-family: Mantaga400;
+            color: black;
+            transition: all .5s;
+            &:hover{
+                color: #ff6f2e;
+            }
         }
 
         span {

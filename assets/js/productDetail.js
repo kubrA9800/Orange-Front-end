@@ -132,3 +132,34 @@ centerMode     : true
 
   
 })
+
+let addToWishlistIcon=document.querySelector("#product-detail .text .add")
+
+addToWishlistIcon.onclick=function(){
+    this.parentElement.nextElementSibling.children[0].classList.remove("d-none")
+    this.classList.add("d-none")
+    // this.parentElement.nextElementSibling.children[0].onclick=function(){
+    //     this.classList.add("d-none")
+    //     this.parentElement.previousElementSibling.children[0].classList.remove("d-none")
+    // }
+}
+
+
+
+let tabHeaders=document.querySelectorAll(".tab-header .item")
+let tabContents=document.querySelectorAll(".tab-content .item")
+tabHeaders.forEach(tabHeader => {
+    tabHeader.addEventListener("click", function(){
+        document.querySelector(".active-tab").classList.remove("active-tab")
+        this.classList.add("active-tab")
+
+
+        tabContents.forEach(tabContent => {
+            if(tabContent.getAttribute("data-id") ==this.getAttribute("data-id")){
+                tabContent.classList.remove("d-none")
+            }else{
+                tabContent.classList.add("d-none")
+            }
+        });
+    })
+});
