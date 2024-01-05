@@ -38,7 +38,6 @@
         .sidebar {
             width: 40% !important;
         }
-
         .search-sidebar {
             width: 40% !important;
         }
@@ -94,11 +93,9 @@
         .sidebar {
             width: 30% !important;
         }
-
         .search-sidebar {
             width: 30% !important;
         }
-
         nav {
             display: none;
         }
@@ -136,7 +133,7 @@
         nav {
             width: 100%;
         }
-
+       
     }
 }
 
@@ -156,7 +153,6 @@ a {
 }
 
 header {
-    
     position: sticky;
     top: 0;
     background-color: white;
@@ -188,7 +184,7 @@ header {
 
     .header-all {
         padding: 2rem 0;
-       
+
         .logo {
             width: 100%;
 
@@ -269,11 +265,9 @@ header {
             margin-top: 20px;
             font-family: Karla400;
             font-size: 16px;
-
-            span {
+            span{
                 color: #999;
             }
-
             a {
                 color: #212529;
             }
@@ -292,7 +286,7 @@ header {
                 border: none;
                 margin-top: 20px;
                 outline: none;
-
+                
                 &::placeholder {
                     font-family: Karla400;
                     font-size: 20px;
@@ -396,112 +390,73 @@ header {
 
 }
 
-#blogs-all{
-    padding: 2rem 0;
-    .blog-left{
-        .blog-item{
-            margin-bottom: 50px;
-            .img {
-                width: 100%;
-    
-                img {
-                    width: 95%;
-                    height:300px;
-                    object-fit:cover;
-                }
-            }
-    
-            .text {
-                width: 80%;
-                margin-top: 20px;
-    
-                hr {
-                    width: 20%;
-                }
-    
-                p {
-                    font-family: Karla400;
-                    font-size: 16px;
-                    color: #919090;
-                }
-    
-                a {
-                    &:nth-of-type(1) {
-                        font-family: Montaga400;
-                        font-size: 24px;
-                        margin: 30px 0;
-                        color: black;
-                    }
-    
-                    &:nth-of-type(2) {
-                        color: #ddf3b6;
-                        background-color: #102b26;
-                        font-family: Karla500;
-                        font-size: 15px;
-                        padding: 10px 20px;
-                        transition: all .5s;
-    
-                        &:hover {
-                            color: white;
-                            background-color: #ff6f2e;
-                        }
-                    }
-    
-                }
+#cart{
+    .empty-cart{
+        padding: 5rem 0;
+        text-align: center;
+        h1{
+            font-family: Montaga400;
+            font-size: 36px;
+        }
+        p{
+            font-family: Karla400;
+            font-size: 16px;
+        }
+        hr{
+            color: #999;
+            margin: 40px 0;
+        }
+        a{
+            color: #ddf3b6;
+            background-color: #102b26;
+            padding: 15px 25px;
+            font-family: Karla400;
+            font-size: 16px;
+            transition: all .4s;
+            &:hover{
+                color: white;
+                background-color: #ff6f2e;
             }
         }
-       
     }
-    .blog-right{
-        position: sticky;
-        top: 140px;
-        z-index: -1;
-        height: 350px;
-        background-color: white;
-        .posts {
-            h3{
-                font-family: Montaga400;
-                font-size: 24px;
-            }
-            .item {
-                display: flex;
-                margin-bottom: 30px;
-
-                .image {
-                    width: 50%;
-
-                    img {
-                        width: 100%;
-                        height: 70px;
-                        object-fit: cover;
-                    }
+    .full-cart{
+        thead{
+            tr{
+                &:nth-child(1){
+                    width: 200px;
                 }
-
-                .text {
-                    width: 100%;
-                    margin-left: 30px;
-
-                    a {
-                        display: block;
-                        color: black;
-
-                        &:nth-of-type(1) {
-                            font-family: Karla400;
-                            font-size: 12px;
-                        }
-
-                        &:nth-of-type(2) {
-                            font-family: Karla400;
-                            font-size: 16px;
-                        }
-                    }
+                :nth-child(2){
+                    width: 200px;
                 }
             }
-
         }
+       tbody{
+        tr{
+            &:nth-child(1){
+                width: 200px;
+                img{
+                    width: 150px;
+                    height: 180px;
+                }
+            }
+            :nth-child(2){
+                width: 200px;
+            }
+        }
+       }
+        button{
+            border: none;
+            background: transparent;
+            font-size: 12px;
+        }
+        input{
+            border: none;
+            outline: none;
+            width: 20px;
+        }
+     
     }
 }
-
 
 
 footer {

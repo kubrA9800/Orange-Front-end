@@ -41,6 +41,9 @@
   header .hamburger-icon {
     display: inline;
   }
+  #login-register .form {
+    width: 60% !important;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   header .header-all .logo {
@@ -72,6 +75,9 @@
   }
   header .hamburger-icon {
     display: inline;
+  }
+  #login-register .form {
+    width: 60% !important;
   }
 }
 @media all and (min-width: 992px) and (max-width: 1200px) {

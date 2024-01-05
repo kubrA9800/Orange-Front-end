@@ -67,6 +67,12 @@
         }
 
     }
+    #login-register{
+        .form{
+            width: 60%!important;
+
+        }
+    }
 }
 
 
@@ -123,6 +129,12 @@
         }
 
     }
+    #login-register{
+        .form{
+            width: 60%!important;
+
+        }
+    }
 }
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
@@ -138,6 +150,7 @@
         }
 
     }
+
 }
 
 
@@ -416,40 +429,6 @@ header {
             width: 40%;
             margin: auto;
 
-            // .form-item{
-            //     position: relative;
-            //     border: 1px solid #e7e7e7;
-            //     .form-input{
-            //         width: 100%;
-            //         padding: 5px 15px;
-            //         outline: none;
-            //         border: none;
-            //     }
-
-            //     .form-label {
-            //         position: absolute;
-            //         pointer-events: none;
-            //         left: 15px;
-            //         right: 15px;
-            //         top: 0;
-            //         white-space: nowrap;
-            //         overflow: hidden;
-            //         line-height: 40px;
-            //         transition: .3s;
-            //       }
-
-            //       .form-input:focus~.form-label,
-            //       .form-input:not(:focus):valid~.form-label {
-            //         top: -23px;
-            //         font-size: 13px;
-            //         background-color: white;
-            //         width: 40px;
-            //         padding: 0px 5px;
-            //       }
-            //       .form-input:focus .form-item{
-            //         border: 2px solid #102b26;
-            //       }
-            // }
 
             .input {
                 position: relative;

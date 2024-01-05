@@ -67,6 +67,22 @@
         }
 
     }
+    #categories{
+        .item{
+            margin-bottom: 30px;
+        }
+    }
+    #products-all{
+        .filtering{
+            width: 90%!important;
+          
+        }
+        .sorting{
+            .form-select{
+                width: 30%!important;
+            }
+        }
+    }
 }
 
 
@@ -123,6 +139,23 @@
         }
 
     }
+    #categories{
+        .item{
+            margin-bottom: 30px;
+        }
+    }
+    #products-all{
+        .filtering{
+            width: 90%!important;
+           
+         
+        }
+        .sorting{
+            .form-select{
+                width: 30%!important;
+            }
+        }
+    }
 }
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
@@ -138,6 +171,12 @@
         }
 
     }
+    .filtering{
+        width: 90%!important;
+      
+     
+    }
+  
 }
 
 
@@ -412,7 +451,7 @@ header {
         .item {
             position: relative;
             overflow: hidden;
-
+            cursor: pointer;
             &:hover img {
                 transform: scale(1.1);
             }
@@ -447,13 +486,35 @@ header {
     }
 }
 
-#products-all{
-    .filtering{
+#products-all {
+    padding: 3rem 0;
+.left{
+    position: sticky;
+    top: 150px;
+    
+    .filtering {
+        
+        margin-top: 1rem;
+        width: 75%;
+        margin: auto;
+
+        h1 {
+            font-family: Montaga400;
+            font-size: 30px;
+        }
+        h6{
+            margin-bottom: 20px;
+        }
+        hr {
+
+            color: #aeaeae;
+        }
+
         .filter-all {
-            margin-top: 3em;
+
 
             .filter-price {
-                margin-top: 2rem;
+                margin: 3rem 0;
 
 
                 .range-slider {
@@ -595,93 +656,158 @@ header {
                     cursor: pointer;
                 }
 
+                button {
+                    color: #ddf3b6;
+                    background-color: #102b26;
+                    font-size: 15px;
+                    transition: all .4s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #ff6f2e;
+                    }
+
+                }
+
 
 
             }
 
-
-        }
-    }
-    .product {
-        
-        position: relative;
-        overflow: hidden;
-
-        img {
-            width: 96%;
-      
-
-        }
-
-        .hover-img {
-            position: absolute;
-            bottom: 102px;
-            left: 0px;
-            width: 96%;
-            transition: all .7s;
+            
+                .category,.brand{
+                    margin: 5px 0;
+                    font-family: Karla400;
+                    font-size: 16px;
+                    transition: all .4s;
+                    label{
+                        margin-left: 5px;
+                        cursor: pointer;
+                    }
+                    input{
+                        accent-color:#ff6f2e;
+                        cursor: pointer;
+                    }
+                    &:hover{
+                        color: #ff6f2e;
+                    }
+                }
             
 
-            &:hover {
-                transform: scale(1.1);
-                
+
+        }
+    }
+}
+   
+
+    .right {
+        width: 97%;
+        .sorting{
+            padding: 0 15px;
+            h1{
+                font-family: Karla400;
+                font-size: 16px;
+            }
+            align-items: end;
+            justify-content: end;
+            .form-select{
+                width: 150px;
+                height: 40px;
+                margin: 0 20px;
+                border-radius: inherit;
+                color: gray;
+            }
+            select:focus {
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #c7c4c4;
             }
         }
 
-        .icons {
-            position: absolute;
-            left: 64px;
-            bottom: 161px;
-            transition: all .7s;
+        .product {
 
-            i {
-                &:nth-child(2) {
-                    position: absolute;
-                    left: 0;
-                }
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
 
-                margin: 0 2px;
-                font-size: 18px;
-                background-color: white;
-                padding: 10px;
-                border-radius: 50%;
-                cursor: pointer;
-                transition: all .6s;
+            img {
+                width: 96%;
+
+
+            }
+
+            .hover-img {
+                position: absolute;
+                bottom: 102px;
+                left: 0px;
+                width: 96%;
+                transition: all .7s;
+
 
                 &:hover {
-                    color: white;
-                    background-color: #ff6f2e;
-                }
+                    transform: scale(1.1);
 
-            }
-        }
-        .text {
-            text-align: center;
-            margin-top: 20px;
-        
-            h6 {
-                font-size: 14px;
-                font-family: Karla400;
-                color: #c7c4c4;
-            }
-        
-            h4 {
-                font-size: 20px;
-                font-family: Mantaga400;
-                color: black;
-                transition: all .5s;
-                &:hover{
-                    color: #ff6f2e;
                 }
             }
-        
-            span {
-                font-size: 16px;
-                font-family: Karla400;
-            }
-        }
 
+            .icons {
+                position: absolute;
+                left: 64px;
+                bottom: 161px;
+                transition: all .7s;
+
+                i {
+                    &:nth-child(2) {
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    margin: 0 2px;
+                    font-size: 18px;
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: all .6s;
+
+                    &:hover {
+                        color: white;
+                        background-color: #ff6f2e;
+                    }
+
+                }
+            }
+
+            .text {
+                text-align: center;
+                margin-top: 20px;
+
+                h6 {
+                    font-size: 14px;
+                    font-family: Karla400;
+                    color: #c7c4c4;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-family: Mantaga400;
+                    color: black;
+                    transition: all .5s;
+
+                    &:hover {
+                        color: #ff6f2e;
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    font-family: Karla400;
+                }
+            }
+
+        }
     }
-    
+
+
 }
 
 

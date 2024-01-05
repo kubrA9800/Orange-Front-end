@@ -343,7 +343,7 @@ header .icons .basket .count {
 }
 #blogs-all .blog-right {
   position: sticky;
-  top: 100px;
+  top: 140px;
   z-index: -1;
   height: 350px;
   background-color: white;

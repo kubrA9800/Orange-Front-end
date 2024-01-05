@@ -41,6 +41,15 @@
   header .hamburger-icon {
     display: inline;
   }
+  #categories .item {
+    margin-bottom: 30px;
+  }
+  #products-all .filtering {
+    width: 90% !important;
+  }
+  #products-all .sorting .form-select {
+    width: 30% !important;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   header .header-all .logo {
@@ -73,6 +82,15 @@
   header .hamburger-icon {
     display: inline;
   }
+  #categories .item {
+    margin-bottom: 30px;
+  }
+  #products-all .filtering {
+    width: 90% !important;
+  }
+  #products-all .sorting .form-select {
+    width: 30% !important;
+  }
 }
 @media all and (min-width: 992px) and (max-width: 1200px) {
   header .hamburger-icon {
@@ -80,6 +98,9 @@
   }
   header nav {
     width: 100%;
+  }
+  .filtering {
+    width: 90% !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -309,6 +330,7 @@ header .icons .basket .count {
 #categories .category-items .item {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 #categories .category-items .item:hover img {
   transform: scale(1.1);
@@ -336,60 +358,79 @@ header .icons .basket .count {
   font-size: 16px;
 }
 
-#products-all .filtering .filter-all {
-  margin-top: 3em;
+#products-all {
+  padding: 3rem 0;
 }
-#products-all .filtering .filter-all .filter-price {
-  margin-top: 2rem;
+#products-all .left {
+  position: sticky;
+  top: 150px;
 }
-#products-all .filtering .filter-all .filter-price .range-slider {
+#products-all .left .filtering {
+  margin-top: 1rem;
+  width: 75%;
+  margin: auto;
+}
+#products-all .left .filtering h1 {
+  font-family: Montaga400;
+  font-size: 30px;
+}
+#products-all .left .filtering h6 {
+  margin-bottom: 20px;
+}
+#products-all .left .filtering hr {
+  color: #aeaeae;
+}
+#products-all .left .filtering .filter-all .filter-price {
+  margin: 3rem 0;
+}
+#products-all .left .filtering .filter-all .filter-price .range-slider {
   margin: auto;
   position: relative;
   height: 4em;
   display: flex;
   justify-content: space-between;
 }
-#products-all .filtering .filter-all .filter-price .range-slider .filterBtn button {
+#products-all .left .filtering .filter-all .filter-price .range-slider .filterBtn button {
   border: none;
   padding: 3px 10px;
 }
-#products-all .filtering .filter-all .filter-price .range-slider svg,
-#products-all .filtering .filter-all .filter-price .range-slider input[type=range] {
+#products-all .left .filtering .filter-all .filter-price .range-slider svg,
+#products-all .left .filtering .filter-all .filter-price .range-slider input[type=range] {
   position: absolute;
   left: 0;
   bottom: 0;
 }
-#products-all .filtering .filter-all .filter-price input[type=number] {
+#products-all .left .filtering .filter-all .filter-price input[type=number] {
   border: 1px solid #ddd;
   font-size: 1.6em;
   -moz-appearance: textfield;
   outline: none;
 }
-#products-all .filtering .filter-all .filter-price input[type=number]::-webkit-outer-spin-button,
-#products-all .filtering .filter-all .filter-price input[type=number]::-webkit-inner-spin-button {
+#products-all .left .filtering .filter-all .filter-price input[type=number]::-webkit-outer-spin-button,
+#products-all .left .filtering .filter-all .filter-price input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-#products-all .filtering .filter-all .filter-price input[type=number]:invalid,
-#products-all .filtering .filter-all .filter-price input[type=number]:out-of-range {
+#products-all .left .filtering .filter-all .filter-price input[type=number]:invalid,
+#products-all .left .filtering .filter-all .filter-price input[type=number]:out-of-range {
   border: 2px solid #102b26;
 }
-#products-all .filtering .filter-all .filter-price input[type=range] {
+#products-all .left .filtering .filter-all .filter-price input[type=range] {
   -webkit-appearance: none;
   width: 100%;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]:focus {
+#products-all .left .filtering .filter-all .filter-price input[type=range]:focus {
   outline: none;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]:focus::-webkit-slider-runnable-track {
+#products-all .left .filtering .filter-all .filter-price input[type=range]:focus::-webkit-slider-runnable-track {
   background: #102b26;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]:focus::-ms-fill-lower {
+#products-all .left .filtering .filter-all .filter-price input[type=range]:focus::-ms-fill-lower {
   background: #102b26;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]:focus::-ms-fill-upper {
+#products-all .left .filtering .filter-all .filter-price input[type=range]:focus::-ms-fill-upper {
   background: #102b26;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-webkit-slider-runnable-track {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -399,7 +440,7 @@ header .icons .basket .count {
   box-shadow: none;
   border: 0;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-webkit-slider-thumb {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-webkit-slider-thumb {
   z-index: 2;
   position: relative;
   box-shadow: 0px 0px 0px #000;
@@ -412,7 +453,7 @@ header .icons .basket .count {
   -webkit-appearance: none;
   margin-top: -6px;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-moz-range-track {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-moz-range-track {
   width: 100%;
   height: 5px;
   cursor: pointer;
@@ -422,7 +463,7 @@ header .icons .basket .count {
   box-shadow: none;
   border: 0;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-moz-range-thumb {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-moz-range-thumb {
   z-index: 2;
   position: relative;
   box-shadow: 0px 0px 0px #000;
@@ -433,7 +474,7 @@ header .icons .basket .count {
   background: #102b26;
   cursor: pointer;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-ms-track {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-ms-track {
   width: 100%;
   height: 5px;
   cursor: pointer;
@@ -442,14 +483,14 @@ header .icons .basket .count {
   border-color: transparent;
   color: transparent;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-ms-fill-lower,
-#products-all .filtering .filter-all .filter-price input[type=range]::-ms-fill-upper {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-ms-fill-lower,
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-ms-fill-upper {
   background: #102b26;
   border-radius: 1px;
   box-shadow: none;
   border: 0;
 }
-#products-all .filtering .filter-all .filter-price input[type=range]::-ms-thumb {
+#products-all .left .filtering .filter-all .filter-price input[type=range]::-ms-thumb {
   z-index: 2;
   position: relative;
   box-shadow: 0px 0px 0px #000;
@@ -460,30 +501,82 @@ header .icons .basket .count {
   background: #102b26;
   cursor: pointer;
 }
-#products-all .product {
+#products-all .left .filtering .filter-all .filter-price button {
+  color: #ddf3b6;
+  background-color: #102b26;
+  font-size: 15px;
+  transition: all 0.4s;
+}
+#products-all .left .filtering .filter-all .filter-price button:hover {
+  color: #fff;
+  background-color: #ff6f2e;
+}
+#products-all .left .filtering .filter-all .category, #products-all .left .filtering .filter-all .brand {
+  margin: 5px 0;
+  font-family: Karla400;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+#products-all .left .filtering .filter-all .category label, #products-all .left .filtering .filter-all .brand label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+#products-all .left .filtering .filter-all .category input, #products-all .left .filtering .filter-all .brand input {
+  accent-color: #ff6f2e;
+  cursor: pointer;
+}
+#products-all .left .filtering .filter-all .category:hover, #products-all .left .filtering .filter-all .brand:hover {
+  color: #ff6f2e;
+}
+#products-all .right {
+  width: 97%;
+}
+#products-all .right .sorting {
+  padding: 0 15px;
+  align-items: end;
+  justify-content: end;
+}
+#products-all .right .sorting h1 {
+  font-family: Karla400;
+  font-size: 16px;
+}
+#products-all .right .sorting .form-select {
+  width: 150px;
+  height: 40px;
+  margin: 0 20px;
+  border-radius: inherit;
+  color: gray;
+}
+#products-all .right .sorting select:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #c7c4c4;
+}
+#products-all .right .product {
   position: relative;
   overflow: hidden;
+  margin-top: 30px;
 }
-#products-all .product img {
+#products-all .right .product img {
   width: 96%;
 }
-#products-all .product .hover-img {
+#products-all .right .product .hover-img {
   position: absolute;
   bottom: 102px;
   left: 0px;
   width: 96%;
   transition: all 0.7s;
 }
-#products-all .product .hover-img:hover {
+#products-all .right .product .hover-img:hover {
   transform: scale(1.1);
 }
-#products-all .product .icons {
+#products-all .right .product .icons {
   position: absolute;
   left: 64px;
   bottom: 161px;
   transition: all 0.7s;
 }
-#products-all .product .icons i {
+#products-all .right .product .icons i {
   margin: 0 2px;
   font-size: 18px;
   background-color: white;
@@ -492,33 +585,33 @@ header .icons .basket .count {
   cursor: pointer;
   transition: all 0.6s;
 }
-#products-all .product .icons i:nth-child(2) {
+#products-all .right .product .icons i:nth-child(2) {
   position: absolute;
   left: 0;
 }
-#products-all .product .icons i:hover {
+#products-all .right .product .icons i:hover {
   color: white;
   background-color: #ff6f2e;
 }
-#products-all .product .text {
+#products-all .right .product .text {
   text-align: center;
   margin-top: 20px;
 }
-#products-all .product .text h6 {
+#products-all .right .product .text h6 {
   font-size: 14px;
   font-family: Karla400;
   color: #c7c4c4;
 }
-#products-all .product .text h4 {
+#products-all .right .product .text h4 {
   font-size: 20px;
   font-family: Mantaga400;
   color: black;
   transition: all 0.5s;
 }
-#products-all .product .text h4:hover {
+#products-all .right .product .text h4:hover {
   color: #ff6f2e;
 }
-#products-all .product .text span {
+#products-all .right .product .text span {
   font-size: 16px;
   font-family: Karla400;
 }

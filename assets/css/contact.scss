@@ -67,6 +67,11 @@
         }
 
     }
+    #contact-form{
+        .content{
+            width: 60%!important;
+        }
+    }
 }
 
 
@@ -123,6 +128,11 @@
         }
 
     }
+    #contact-form{
+        .content{
+            width: 60%!important;
+        }
+    }
 }
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
@@ -138,6 +148,7 @@
         }
 
     }
+  
 }
 
 

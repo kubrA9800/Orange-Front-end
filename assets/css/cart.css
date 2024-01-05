@@ -41,9 +41,6 @@
   header .hamburger-icon {
     display: inline;
   }
-  #contact-form .content {
-    width: 60% !important;
-  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   header .header-all .logo {
@@ -75,9 +72,6 @@
   }
   header .hamburger-icon {
     display: inline;
-  }
-  #contact-form .content {
-    width: 60% !important;
   }
 }
 @media all and (min-width: 992px) and (max-width: 1200px) {
@@ -302,88 +296,59 @@ header .icons .basket .count {
   align-items: center;
 }
 
-#contact-top .img {
-  width: 100%;
+#cart .empty-cart {
+  padding: 5rem 0;
+  text-align: center;
 }
-#contact-top .img img {
-  width: 90%;
+#cart .empty-cart h1 {
+  font-family: Montaga400;
+  font-size: 36px;
 }
-#contact-top .text h2 {
-  text-transform: uppercase;
-  font-size: 16px;
+#cart .empty-cart p {
   font-family: Karla400;
+  font-size: 16px;
+}
+#cart .empty-cart hr {
   color: #999;
+  margin: 40px 0;
 }
-#contact-top .text h1 {
-  font-size: 36px;
-  font-family: Karla500;
-}
-#contact-top .text h6 {
+#cart .empty-cart a {
+  color: #ddf3b6;
+  background-color: #102b26;
+  padding: 15px 25px;
+  font-family: Karla400;
   font-size: 16px;
-  font-family: Karla400;
+  transition: all 0.4s;
 }
-
-#contact-form {
-  padding: 4rem 0;
-}
-#contact-form .content {
-  width: 40%;
-  margin: auto;
-}
-#contact-form .content h1 {
-  font-size: 36px;
-  font-family: Karla500;
-  text-align: center;
-}
-#contact-form .content h6 {
-  font-size: 14px;
-  font-family: Karla400;
-  text-align: center;
-}
-#contact-form h4 {
-  font-family: Karla400;
-  font-size: 14px;
-}
-#contact-form .input {
-  margin-top: 20px;
-}
-#contact-form .inputs-top {
-  margin-top: 30px;
-}
-#contact-form .inputs {
-  width: 100%;
-  height: 40px;
-  border: 1px solid #DDDDDD;
-  outline: none;
-  border-radius: 3px;
-}
-#contact-form .inputs:focus {
-  border: 1px solid #949393;
-}
-#contact-form textarea {
-  width: 100%;
-  border: 1px solid #DDDDDD;
-  outline: none;
-  border-radius: 3px;
-}
-#contact-form textarea:focus {
-  border: 1px solid #949393;
-}
-#contact-form .button button {
-  font-family: Karla400;
-  font-size: 15px;
-  border: none;
-  background-color: black;
-  border: 1px solid #DDDDDD;
-  border-radius: 2px;
+#cart .empty-cart a:hover {
   color: white;
-  margin: 20px 0;
-  padding: 10px;
-  transition: all 0.5s;
-}
-#contact-form .button button:hover {
   background-color: #ff6f2e;
-  color: white;
+}
+#cart .full-cart thead tr:nth-child(1) {
+  width: 200px;
+}
+#cart .full-cart thead tr :nth-child(2) {
+  width: 200px;
+}
+#cart .full-cart tbody tr:nth-child(1) {
+  width: 200px;
+}
+#cart .full-cart tbody tr:nth-child(1) img {
+  width: 150px;
+  height: 180px;
+}
+#cart .full-cart tbody tr :nth-child(2) {
+  width: 200px;
+}
+#cart .full-cart button {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+}
+#cart .full-cart input {
+  border: none;
+  outline: none;
+  width: 20px;
 }
 
 footer {
@@ -494,4 +459,4 @@ footer .footer-all .footer-bottom .rights {
   text-align: center;
   margin: auto;
   color: #6a6c6d;
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=cart.css.map */
