@@ -193,6 +193,160 @@ header .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 4;
 }
+header .cart-sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 22%;
+  height: 100vh;
+  padding: 20px;
+  z-index: 100;
+  background-color: white;
+  transition: all 0.5s;
+}
+header .cart-sidebar .close-icon {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+header .cart-sidebar h1 {
+  padding: 10px 0;
+  font-size: 18px;
+}
+header .cart-sidebar .cart-products {
+  height: 30%;
+  overflow-y: scroll;
+}
+header .cart-sidebar .cart-products::-webkit-scrollbar {
+  width: 5px;
+}
+header .cart-sidebar .cart-products::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+header .cart-sidebar .cart-products .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+header .cart-sidebar .cart-products .item a {
+  font-size: 12px;
+  color: #6a6c6d;
+  border-bottom: 1px solid #6a6c6d;
+}
+header .cart-sidebar .cart-products .item .img {
+  width: 25%;
+}
+header .cart-sidebar .cart-products .item .img img {
+  width: 100%;
+}
+header .cart-sidebar .cart-products .item .text {
+  margin-left: 20px;
+}
+header .cart-sidebar .cart-products .item .text h1,
+header .cart-sidebar .cart-products .item .text h2 {
+  font-family: Karla400;
+  font-weight: 400;
+  font-size: 16px;
+}
+header .cart-sidebar .cart-products .item .text h1 {
+  line-height: 0;
+}
+header .cart-sidebar .cart-products .item .text h2 {
+  color: rgba(40, 40, 40, 0.7);
+}
+header .cart-sidebar .cart-products .item .text .count {
+  border: 1px solid #c7c4c4;
+}
+header .cart-sidebar .cart-products .item .text .count button {
+  border: none;
+  background-color: transparent;
+}
+header .cart-sidebar .cart-products .item .text .count button i {
+  font-size: 12px;
+  color: #6a6c6d;
+}
+header .cart-sidebar .cart-products .item .text .count input {
+  border: none;
+  outline: none;
+  width: 15px;
+  font-size: 12px;
+}
+header .cart-sidebar .cart-products .item a {
+  text-align: end;
+}
+header .cart-sidebar .recommended {
+  margin-top: 30px;
+}
+header .cart-sidebar .recommended h1 {
+  font-family: Montaga400;
+  font-size: 24px;
+}
+header .cart-sidebar .recommended button {
+  display: none !important;
+}
+header .cart-sidebar .recommended .slick-slide {
+  margin-right: 25px !important;
+}
+header .cart-sidebar .recommended .item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .cart-sidebar .recommended .item .img img {
+  width: 100%;
+}
+header .cart-sidebar .recommended .item .text {
+  margin: 20px 0 0 10px;
+}
+header .cart-sidebar .recommended .item .text h4 {
+  font-family: Karla400;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  transition: all 0.5s;
+  margin-bottom: -2px;
+}
+header .cart-sidebar .recommended .item .text h4:hover {
+  color: #ff6f2e;
+}
+header .cart-sidebar .recommended .item .text span {
+  font-size: 14px;
+  font-family: Karla400;
+  color: rgba(40, 40, 40, 0.7);
+}
+header .cart-sidebar .recommended .item .text a {
+  font-size: 12px;
+  color: #6a6c6d;
+  border-bottom: 1px solid #6a6c6d;
+}
+header .cart-sidebar .recommended .item .text a:nth-of-type(2) {
+  display: block;
+}
+header .cart-sidebar .bottom {
+  margin-top: 40px;
+}
+header .cart-sidebar .bottom .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+header .cart-sidebar .bottom a {
+  padding: 16px 50px;
+  color: #102b26;
+  border: 2px solid #102b26;
+  font-size: 16px;
+  font-family: Karla500;
+  transition: all 0.4s;
+}
+header .cart-sidebar .bottom a:hover {
+  background-color: #ff6f2e;
+  color: #fff;
+  border: 2px solid #ff6f2e;
+}
 header .ticker {
   padding: 8px 0;
   background-color: rgb(16, 43, 38);
@@ -308,6 +462,7 @@ header .search-sidebar .input input::placeholder {
 header .search-sidebar .input i {
   margin-top: 15px;
   margin-right: 10px;
+  cursor: pointer;
 }
 header .search-sidebar p {
   font-family: Regular400;
@@ -659,7 +814,7 @@ header .icons .basket .count {
 .overlay {
   overflow: hidden;
   position: fixed;
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
   top: 0;
@@ -753,6 +908,15 @@ header .icons .basket .count {
 .modals .text a:nth-of-type(3):hover {
   color: white;
   background-color: #ff6f2e;
+}
+.modals .close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+  padding: 5px 7px;
+  border: 1px solid #c7c4c4;
+  border-radius: 50%;
 }
 
 #magazines {

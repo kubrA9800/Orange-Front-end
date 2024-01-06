@@ -2,23 +2,6 @@
 
 $(function () {
 
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
-  });
-
-
 
 
   let products = document.querySelectorAll(".product")
@@ -90,6 +73,9 @@ $(function () {
     sidebar.classList.add("move-sidebar")
     this.style.display = "none";
     seacrhSidebar.classList.add("move-sidebar")
+    modal.classList.add("d-none")
+    cartSidebar.classList.add("move-sidebar")
+
 })
 
 
@@ -105,4 +91,36 @@ $(function () {
     seacrhSidebar.classList.add("move-sidebar")
     overlay.style.display = "none"
   })
+
+
+  let eyeIcons=document.querySelectorAll(".product .icons .fa-eye")
+  let modal=document.querySelector(".modals")
+  
+      eyeIcons.forEach(eyeIcon=>{
+        eyeIcon.addEventListener("click", function(){
+          modal.classList.remove("d-none")
+          overlay.style.display = "block";
+        })
+      })
+
+  let closeModalIcon=document.querySelector(".modals .close")
+  closeModalIcon.addEventListener("click",function(){
+    modal.classList.add("d-none")
+          overlay.style.display = "none";
+  })
+
+  let basketIcon=document.querySelector("header .basket")
+  let cartSidebar=document.querySelector(".cart-sidebar")
+  let closeCartSidebar=document.querySelector(".cart-sidebar .close-icon")
+
+  basketIcon.addEventListener("click", function(){
+    console.log("fyguyhj");
+    cartSidebar.classList.remove("move-sidebar")
+    overlay.style.display = "block";
+  })
+  closeCartSidebar.addEventListener("click", function () {
+    cartSidebar.classList.add("move-sidebar")
+    overlay.style.display = "none"
+  })
+  
 })
