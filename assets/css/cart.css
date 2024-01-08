@@ -11,39 +11,34 @@
   font-family: Montaga400;
   src: url(../fonts/Montaga-Regular.ttf);
 }
-@media only screen and (max-width: 768px) {
-  header .header-all .logo {
-    width: 70%;
+@media only screen and (max-width: 576px) {
+  #products .slider-products {
+    display: none !important;
   }
-  header .header-all .logo img {
-    width: 60% !important;
+  #products .mobile-products .icons {
+    left: 30% !important;
   }
-  header .header-all .icon {
-    margin-top: -40px;
-    flex: auto;
+  #products .mobile-products .icons i {
+    font-size: 14px !important;
   }
-  header .sidebar {
-    width: 40% !important;
-  }
-  header .search-sidebar {
-    width: 40% !important;
-  }
-  header nav {
+  #products .mobile-products .icons i:nth-of-type(3) {
     display: none;
   }
-  header .icons .search-icon img {
-    margin-bottom: 6px;
+  #cart .full-cart tbody tr:nth-child(1) img {
+    width: 80px !important;
+    height: 100px !important;
   }
-  header .icons .user-icon,
-  header .icons .wishlist,
-  header .icons .basket {
-    display: none;
+  #cart .full-cart tbody tr span {
+    font-size: 12px;
   }
-  header .hamburger-icon {
-    display: inline;
+  #cart .full-cart tbody tr i {
+    font-size: 8px;
+  }
+  #cart .full-cart i {
+    font-size: 10px !important;
   }
 }
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 576px) and (max-width: 768px) {
   header .header-all .logo {
     width: 70%;
   }
@@ -74,18 +69,65 @@
   header .hamburger-icon {
     display: inline;
   }
+  #products .text h6 {
+    font-size: 12px !important;
+  }
+  #products .text h4 {
+    font-size: 16px !important;
+  }
+  #products .text span {
+    font-size: 14px !important;
+  }
+  #products .hover-img {
+    width: 80% !important;
+    bottom: 133px !important;
+  }
+  #products .icons {
+    left: 80% !important;
+    width: 80% !important;
+    transform: translateX(-50%);
+  }
+  #products .icons i {
+    font-size: 14px !important;
+  }
+  #products .icons i:nth-of-type(3) {
+    display: none;
+  }
+  #products .slider-products {
+    display: none !important;
+  }
 }
-@media all and (min-width: 992px) and (max-width: 1200px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   header .hamburger-icon {
     display: none;
   }
   header nav {
     width: 100%;
   }
+  #products .product .hover-img {
+    width: 82% !important;
+    bottom: 141px !important;
+  }
+  #products .product .icons {
+    left: 33px !important;
+    width: 80% !important;
+  }
+  #products .product .icons i {
+    font-size: 10px !important;
+  }
+  #products .mobile-products {
+    display: none;
+  }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   header .hamburger-icon {
     display: none;
+  }
+  #products .mobile-products {
+    display: none;
+  }
+  #cart .full-cart .count {
+    margin-left: -13px !important;
   }
 }
 a {
@@ -367,15 +409,9 @@ header .icons .basket .count {
 #cart .full-cart tbody tr :nth-child(5) {
   text-align: center;
 }
-#cart .full-cart button {
-  border: none;
-  background: transparent;
+#cart .full-cart tbody tr i {
   font-size: 12px;
-}
-#cart .full-cart input {
-  border: none;
-  outline: none;
-  width: 10px !important;
+  cursor: pointer;
 }
 #cart .full-cart a {
   display: block;

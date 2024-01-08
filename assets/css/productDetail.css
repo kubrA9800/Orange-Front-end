@@ -41,6 +41,17 @@
   header .hamburger-icon {
     display: inline;
   }
+  #product-detail .slide {
+    margin-left: 40px !important;
+  }
+  #product-detail .product__slider-thmb.slick-initialized.slick-slider {
+    margin-left: -50px !important;
+  }
+  #product-detail .guarantee h1 {
+    font-size: 10px !important;
+    top: -10px !important;
+    padding: 2px 8px;
+  }
   #tab-menu {
     width: 90% !important;
   }
