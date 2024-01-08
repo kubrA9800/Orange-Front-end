@@ -11,7 +11,7 @@
   font-family: Montaga400;
   src: url(../fonts/Montaga-Regular.ttf);
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #slider .carousel-inner {
     height: 260px !important;
   }
@@ -71,7 +71,7 @@
     width: 45% !important;
   }
 }
-@media all and (min-width: 576px) and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 768px) {
   #slider .carousel-inner {
     height: 400px !important;
   }

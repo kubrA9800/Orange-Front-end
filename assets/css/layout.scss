@@ -14,7 +14,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
     header {
         .header-all {
 
@@ -83,7 +83,7 @@
 }
 
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 576px) and (max-width: 768px) {
 
     header {
         .header-all {
@@ -142,7 +142,7 @@
     }
 }
 
-@media all and (min-width: 992px) and (max-width: 1200px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
 
     header {
         .hamburger-icon {
@@ -156,7 +156,7 @@
 
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     header {
         .hamburger-icon {
 
